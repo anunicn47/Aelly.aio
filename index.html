@@ -59,7 +59,23 @@ function typeWriter() {
         <header class="hero hero--primary heroBanner_2Ftp">
             <div class="container">
                 <img src="assets/img/rose.png" width="200" height="200" />
-                <h1 class="hero__title">Aelly</h1>
+                <h1 class="hero__title"><button onclick="typeWriter()">Aelly</button>
+
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = 'Aelly is the most complete Bot to help you manage your groups easily and safely! ';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script></h1>
                 <p class="hero__subtitle">Aelly is <strong>the most complete Bot</strong> <br> to help you <strong>manage</strong>  your groups easily and <strong>safely</strong>! </p>
                 <div class="buttons_1Wc3">
                     <a class="margin-horiz--xs button button--outline button--secondary button--lg" href="https://t.me/kkara9009">Get Started</a>
